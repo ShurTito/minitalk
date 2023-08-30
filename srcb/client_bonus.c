@@ -6,7 +6,7 @@
 /*   By: antferna <antferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 15:26:46 by antferna          #+#    #+#             */
-/*   Updated: 2023/08/30 16:22:00 by antferna         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:42:57 by antferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	sending_signal(int pid, unsigned char octet)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep(200);
+		usleep(50);
 		i--;
 	}
 }
